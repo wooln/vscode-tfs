@@ -1,26 +1,53 @@
 {
-	"name": "vsc-tfs",
-	"displayName": "TFS",
-	"description": "TFS Visual Studio Code integration.",
-	"version": "0.0.1",
-	"publisher": "Ivan Gabriele",
-	"engines": {
-		"vscode": "^0.10.1"
-	},
-	"categories": [
-		"Other"
-	],
-	"activationEvents": [
-		"onCommand:extension.sayHello"
-	],
-	"main": "./lib/extension",
-	"contributes": {
-		"commands": [{
-			"command": "extension.sayHello",
-			"title": "Hello World"
-		}]
-	},
-	"devDependencies": {
-		"vscode": "0.10.x"
-	}
+  "name": "vsc-tfs",
+  "main": "./lib/extension",
+  "version": "0.0.1",
+  "description": "TFS Visual Studio Code integration.",
+  "author": {
+    "name": "Ivan Gabriele",
+    "email": "ivan.gabriele@gmail.com",
+    "url": "http://www.ivangabriele.com"
+  },
+  "license": "MIT",
+  "keywords": [
+    "tfs",
+    "team",
+    "foundation",
+    "server",
+    "microsoft"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivangabriele/vsc-tfs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ivangabriele/vsc-tfs/issues"
+  },
+  "homepage": "https://github.com/ivangabriele/vsc-tfs#readme",
+  "readmeFilename": "README.md",
+  "engines": {
+    "vscode": "^0.10.1"
+  },
+  "dependencies": {
+    "tfs": "^1.2.4"
+  },
+  "devDependencies": {
+    "vscode": "0.10.x"
+  },
+  "activationEvents": [
+    "onCommand:extension.sayHello"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.sayHello",
+        "title": "Hello World"
+      }
+    ]
+  },
+  "displayName": "TFS",
+  "publisher": "Ivan Gabriele",
+  "categories": [
+    "Other"
+  ]
 }
