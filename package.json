@@ -1,5 +1,5 @@
 {
-  "name": "vsc-tfs",
+  "name": "vscode-tfs",
   "main": "./lib/extension",
   "version": "0.3.1",
   "description": "TFS Visual Studio Code integration.",
@@ -18,12 +18,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ivangabriele/vsc-tfs.git"
+    "url": "git+https://github.com/ivangabriele/vscode-tfs.git"
   },
   "bugs": {
-    "url": "https://github.com/ivangabriele/vsc-tfs/issues"
+    "url": "https://github.com/ivangabriele/vscode-tfs/issues"
   },
-  "homepage": "https://github.com/ivangabriele/vsc-tfs#readme",
+  "homepage": "https://github.com/ivangabriele/vscode-tfs#readme",
   "readmeFilename": "README.md",
   "engines": {
     "vscode": "^0.10.1"
