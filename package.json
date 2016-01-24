@@ -1,6 +1,6 @@
 {
   "name": "vscode-tfs",
-  "main": "./lib/extension",
+  "main": "./lib/vscode-tfs",
   "version": "0.3.1",
   "description": "TFS Visual Studio Code integration.",
   "author": {
@@ -35,12 +35,17 @@
     "vscode": "0.10.x"
   },
   "activationEvents": [
-    "onCommand:extension.get"
+    "onCommand:vscode-tfs.checkout",
+    "onCommand:vscode-tfs.get"
   ],
   "contributes": {
     "commands": [
       {
-        "command": "extension.get",
+        "command": "vscode-tfs.get",
+        "title": "TFS: Checkout"
+      },
+      {
+        "command": "vscode-tfs.get",
         "title": "TFS: Get Latest"
       }
     ]
