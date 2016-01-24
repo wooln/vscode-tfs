@@ -1,5 +1,5 @@
 # TFS extension for Visual Studio Code
-**TFS Atom integration** _&nbsp; ― &nbsp; This is a work in progress..._
+**Visual Studio Code Team Foundation Server integration** _&nbsp; ― &nbsp; This is a work in progress..._
 
 [![Build Status](https://travis-ci.org/ivangabriele/vscode-tfs.svg?branch=master)](https://travis-ci.org/ivangabriele/vscode-tfs)
 [![NPM Version](https://img.shields.io/npm/v/vscode-tfs.svg?style=flat)](https://www.npmjs.org/package/vscode-tfs)
