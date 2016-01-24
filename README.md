@@ -11,7 +11,7 @@
 
 ## Important !
 
-> **You MUST have Visual Studio installed with Team Foundation Server Power Tools.**
+> **You MUST have Team Foundation Server Power Tools installed to be able to use this extension.**
 
 ## About TFS permissions
 
