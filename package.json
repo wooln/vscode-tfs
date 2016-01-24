@@ -3,7 +3,7 @@
 	"displayName": "TFS",
 	"description": "TFS Visual Studio Code integration.",
 	"version": "0.0.1",
-	"publisher": "ivangabriele",
+	"publisher": "Ivan Gabriele",
 	"engines": {
 		"vscode": "^0.10.1"
 	},
@@ -13,7 +13,7 @@
 	"activationEvents": [
 		"onCommand:extension.sayHello"
 	],
-	"main": "./extension",
+	"main": "./lib/extension",
 	"contributes": {
 		"commands": [{
 			"command": "extension.sayHello",
