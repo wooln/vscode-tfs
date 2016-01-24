@@ -7,11 +7,13 @@
 [![Dependency Status](https://david-dm.org/ivangabriele/vscode-tfs.svg)](https://david-dm.org/ivangabriele/vscode-tfs)
 [![devDependency Status](https://david-dm.org/ivangabriele/vscode-tfs/dev-status.svg)](https://david-dm.org/ivangabriele/vscode-tfs#info=devDependencies)
 
+Mar
+
 ---
 
 ## Important !
 
-> **You MUST have Visual Studio 2010 or above installed with Team Foundation Server.**
+> **You MUST have Visual Studio installed with Team Foundation Server Power Tools or Team Foundation Server.**
 
 ## About TFS permissions
 
@@ -26,3 +28,7 @@ To be able to use this plugin as is, you also need to be able to execute 'TF.exe
 - **AUTO CHECKOUT FOR EDIT** to be able to edit files without unchecking "Read-only" files property
 - **CHECKIN** command implementation
 - **UNDO** command implementation
+
+#### Links
+
+- [Visual Studio Code TFS extension on Visual Studio Market Place](https://marketplace.visualstudio.com/items/ivangabriele.vscode-tfs)
