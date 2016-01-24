@@ -1,5 +1,5 @@
 {
-	"name": "tfs",
+	"name": "vsc-tfs",
 	"displayName": "TFS",
 	"description": "TFS Visual Studio Code integration.",
 	"version": "0.0.1",
