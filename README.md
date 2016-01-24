@@ -11,7 +11,7 @@
 
 ## Important !
 
-> **You MUST have Visual Studio installed with Team Foundation Server Power Tools or Team Foundation Server.**
+> **You MUST have Visual Studio installed with Team Foundation Server Power Tools.**
 
 ## About TFS permissions
 
