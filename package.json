@@ -29,19 +29,19 @@
     "vscode": "^0.10.1"
   },
   "dependencies": {
-    "tfs": "^1.2.4"
+    "tfs": "^1.2.6"
   },
   "devDependencies": {
     "vscode": "0.10.x"
   },
   "activationEvents": [
-    "onCommand:extension.sayHello"
+    "onCommand:extension.get"
   ],
   "contributes": {
     "commands": [
       {
-        "command": "extension.sayHello",
-        "title": "Hello World"
+        "command": "extension.get",
+        "title": "TFS: Get Latest"
       }
     ]
   },
