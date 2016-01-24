@@ -35,18 +35,33 @@
     "vscode": "0.10.x"
   },
   "activationEvents": [
+    "onCommand:vscode-tfs.checkin",
     "onCommand:vscode-tfs.checkout",
-    "onCommand:vscode-tfs.get"
+    "onCommand:vscode-tfs.get",
+    "onCommand:vscode-tfs.history",
+    "onCommand:vscode-tfs.undo"
   ],
   "contributes": {
     "commands": [
       {
-        "command": "vscode-tfs.get",
-        "title": "TFS: Checkout"
+        "command": "vscode-tfs.checkin",
+        "title": "TFS: Check In…"
+      },
+      {
+        "command": "vscode-tfs.checkout",
+        "title": "TFS: Get Latest"
       },
       {
         "command": "vscode-tfs.get",
-        "title": "TFS: Get Latest"
+        "title": "TFS: Get Latest Version"
+      },
+      {
+        "command": "vscode-tfs.history",
+        "title": "TFS: View History"
+      },
+      {
+        "command": "vscode-tfs.undo",
+        "title": "TFS: Undo Pending Changes…"
       }
     ]
   },
