@@ -13,13 +13,25 @@
 
 > **You MUST have Team Foundation Server Power Tools installed to be able to use this extension.**
 
-## About TFS permissions
-
-To be able to use this plugin as is, you also need to be able to execute 'TF.exe' commands in your favorite CLI without any login window. It may be planned to implement an auto `/login` to avoid that but this would be highly unsafe to store your login and password into settings.
-
 ## Available commands
 
+- **CHECKIN**
+- **CHECKOUT**
 - **GET**
+- **HISTORY**
+- **UNDO**
+
+## Contribute to development
+
+You need to be at ease with NodeJS language and Git usage.
+
+    git clone https://github.com/ivangabriele/vscode-tfs.git
+    cd vscode-tfs
+    npm install
+    npm install grunt-cli -g
+    grunt githooks
+
+The last command create a `pre-commit` hook to ensure that you don't commit anything if it the tests are not successful.
 
 ## Roadmap
 
