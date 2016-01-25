@@ -77,7 +77,11 @@
   },
   "displayName": "TFS",
   "publisher": "ivangabriele",
-  "icon": "./res/icon.png",
+  "icon": "res/icon.png",
+  "galleryBanner": {
+    "color": "#912a2a",
+    "theme": "dark"
+  },
   "categories": [
     "Other"
   ]
