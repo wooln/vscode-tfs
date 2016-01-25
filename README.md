@@ -11,19 +11,30 @@
 
 ## Important !
 
-> **You MUST have Team Foundation Server Power Tools installed to be able to use this extension.**
+> **You MUST have Visual Studio and Team Foundation Server Power Tools installed to be able to use this extension.**
+
+## Installation
+
+1. Open up VS Code
+2. Type `F1`
+3. Type ext in command palette.
+4. Select `Extensions: Install Extension` and hit `ENTER`
+5. Type `tfs`
+6. Select **`TFS`** extension and hit `ENTER`
+
+## Usage
+
+Hit `Alt+T` to list all available commands available for the current opened file.
 
 ## Available commands
 
-- **CHECKIN**
-- **CHECKOUT**
-- **GET**
-- **HISTORY**
-- **UNDO**
+- **Checkin**
+- **Get**
+- **Undo**
 
-## Contribute to development
+## Contribute
 
-You need to be at ease with NodeJS language and Git usage.
+To be able to contribute to TFS development, you need to be at ease with **NodeJS** language and **Git** usage.
 
     git clone https://github.com/ivangabriele/vscode-tfs.git
     cd vscode-tfs
@@ -35,8 +46,9 @@ The last command create a `pre-commit` hook to ensure that you don't commit anyt
 
 ## Roadmap
 
-- **AUTO CHECKOUT FOR EDIT** to be able to edit files without unchecking "Read-only" files property
+1. **Auto-checkout** to be able to edit files without manually checking them out.
 
 #### Links
 
-- [Visual Studio Code TFS extension on Visual Studio Market Place](https://marketplace.visualstudio.com/items/ivangabriele.vscode-tfs)
+- [TFS extension on Visual Studio Market Place](https://marketplace.visualstudio.com/items/ivangabriele.vscode-tfs)
+- [MIT Licence](https://github.com/ivangabriele/vscode-tfs/blob/master/LICENCE)
