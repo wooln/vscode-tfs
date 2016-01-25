@@ -16,15 +16,15 @@
 ## Installation
 
 1. Open up VS Code
-2. Type `F1`
-3. Type ext in command palette.
-4. Select `Extensions: Install Extension` and hit `ENTER`
+2. Type **`F1`**
+3. Type `ext` in command palette.
+4. Select `Extensions: Install Extension` and hit **`ENTER`**
 5. Type `tfs`
-6. Select **`TFS`** extension and hit `ENTER`
+6. Select **`TFS`** extension and hit **`ENTER`**
 
 ## Usage
 
-Hit `Alt+T` to list all available commands available for the current opened file.
+Hit **`Alt + T`** to list available commands for the current edited file.
 
 ## Available commands
 
