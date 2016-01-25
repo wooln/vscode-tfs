@@ -36,8 +36,6 @@ The last command create a `pre-commit` hook to ensure that you don't commit anyt
 ## Roadmap
 
 - **AUTO CHECKOUT FOR EDIT** to be able to edit files without unchecking "Read-only" files property
-- **CHECKIN** command implementation
-- **UNDO** command implementation
 
 #### Links
 
