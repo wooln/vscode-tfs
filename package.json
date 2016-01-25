@@ -77,6 +77,7 @@
   },
   "displayName": "TFS",
   "publisher": "ivangabriele",
+  "icon": "./res/icon.png",
   "categories": [
     "Other"
   ]
