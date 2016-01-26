@@ -50,5 +50,6 @@ The last command create a `pre-commit` hook to ensure that you don't commit anyt
 
 #### Links
 
+- [TFS extension on Github](https://github.com/ivangabriele/vscode-tfs)
 - [TFS extension on Visual Studio Market Place](https://marketplace.visualstudio.com/items/ivangabriele.vscode-tfs)
 - [MIT Licence](https://github.com/ivangabriele/vscode-tfs/blob/master/LICENCE)
