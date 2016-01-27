@@ -47,7 +47,8 @@
     "onCommand:vscode-tfs.get",
     "onCommand:vscode-tfs.history",
     "onCommand:vscode-tfs.list",
-    "onCommand:vscode-tfs.undo"
+    "onCommand:vscode-tfs.undo",
+    "workspace:onDidSaveTextDocument"
   ],
   "contributes": {
     "commands": [
