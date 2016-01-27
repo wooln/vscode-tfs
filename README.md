@@ -26,9 +26,14 @@
 
 Hit **`Alt + T`** to list available commands for the current edited file.
 
-## Available commands
+## Features
+
+- **Auto Check Out for Edit** when a file is saved
+
+### List of available commands
 
 - **Checkin**
+- **Checkout**
 - **Get**
 - **Undo**
 
@@ -46,8 +51,7 @@ The last command create a `pre-commit` hook to ensure that you don't commit anyt
 
 ## Roadmap
 
-1. **Auto-checkout** to be able to edit files without manually checking them out.
-2. **Add** command
+1. **Add** command
 
 #### Links
 
