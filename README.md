@@ -47,6 +47,7 @@ The last command create a `pre-commit` hook to ensure that you don't commit anyt
 ## Roadmap
 
 1. **Auto-checkout** to be able to edit files without manually checking them out.
+2. **Add** command
 
 #### Links
 
