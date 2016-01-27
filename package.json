@@ -51,6 +51,10 @@
         "title": "TFS: Check In"
       },
       {
+        "command": "vscode-tfs.checkout",
+        "title": "TFS: Check Out for Edit"
+      },
+      {
         "command": "vscode-tfs.get",
         "title": "TFS: Get Latest Version"
       },
