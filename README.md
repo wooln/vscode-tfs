@@ -49,6 +49,10 @@ To be able to contribute to TFS development, you need to be at ease with **NodeJ
 
 The last command create a `pre-commit` hook to ensure that you don't commit anything if it the tests are not successful.
 
+## Issues
+
+Please report any issue or comment [here](https://github.com/ivangabriele/vscode-tfs/issues).
+
 ## Roadmap
 
 1. **Add** command
