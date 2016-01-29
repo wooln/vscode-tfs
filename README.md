@@ -52,6 +52,7 @@ The last command create a `pre-commit` hook to ensure that you don't commit anyt
 ## Roadmap
 
 1. **Add** command
+2. **Checkin multiple files**
 
 #### Links
 
