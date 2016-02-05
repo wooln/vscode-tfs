@@ -11,7 +11,7 @@
 
 ## Important !
 
-> **You MUST have Visual Studio and Team Foundation Server Power Tools installed to be able to use this extension.**
+> **You MUST have a Visual Studio with Team Foundation Server features to be able to use this extension.**
 
 ## Installation
 
@@ -37,6 +37,10 @@ Hit **`Alt + T`** to list available commands for the current edited file.
 - **Get**
 - **Undo**
 
+## Issues
+
+Please report any issue or comment [here](https://github.com/ivangabriele/vscode-tfs/issues).
+
 ## Contribute
 
 To be able to contribute to TFS development, you need to be at ease with **NodeJS** language and **Git** usage.
@@ -47,11 +51,7 @@ To be able to contribute to TFS development, you need to be at ease with **NodeJ
     npm install grunt-cli -g
     grunt githooks
 
-The last command create a `pre-commit` hook to ensure that you don't commit anything if it the tests are not successful.
-
-## Issues
-
-Please report any issue or comment [here](https://github.com/ivangabriele/vscode-tfs/issues).
+The last command create a `pre-commit` hook to ensure that you don't commit anything if tests fail.
 
 ## Roadmap
 
