@@ -56,7 +56,9 @@ The last command create a `pre-commit` hook to ensure that you don't commit anyt
 ## Roadmap
 
 1. **Add** command
-2. **Checkin multiple files**
+2. **Pending Changes** (Status) command
+3. **Checkin multiple files**
+4. File name in status bar message (when suitable)
 
 #### Links
 
