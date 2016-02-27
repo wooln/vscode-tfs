@@ -38,8 +38,8 @@
     "grunt-jsdoc": "^1.1.0",
     "grunt-mocha-test": "^0.12.7",
     "jshint-stylish": "^2.1.0",
-    "mocha": "^2.4.4",
-    "vscode": "^0.11.x"
+    "mocha": "^2.4.5",
+    "vscode": "^0.11.1"
   },
   "activationEvents": [
     "*"
