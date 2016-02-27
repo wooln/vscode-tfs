@@ -32,9 +32,11 @@ Hit **`Alt + T`** to list available commands for the current edited file.
 
 ### List of available commands
 
+- **Add**
 - **Checkin**
 - **Checkout**
 - **Get**
+- **Status (Pending Changes)**
 - **Undo**
 
 ## Issues
@@ -56,7 +58,7 @@ The last command create a `pre-commit` hook to ensure that you don't commit anyt
 ## Roadmap
 
 1. **Add** command
-2. **Pending Changes** (Status) command
+2. **Status** (Pending Changes) command
 3. **Checkin multiple files**
 4. File name in status bar message (when suitable)
 
