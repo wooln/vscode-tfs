@@ -61,6 +61,7 @@ The last command create a `pre-commit` hook to ensure that you don't commit anyt
 2. **Status** (Pending Changes) command
 3. **Checkin multiple files**
 4. File name in status bar message (when suitable)
+5. **Exclude** command
 
 #### Links
 
