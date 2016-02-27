@@ -41,7 +41,9 @@
     "mocha": "^2.4.5",
     "vscode": "^0.11.1"
   },
-  "postinstall": "node ./node_modules/vscode/bin/install",
+  "script": {
+    "postinstall": "node ./node_modules/vscode/bin/install",
+  },
   "activationEvents": [
     "*"
   ],
