@@ -1,22 +1,13 @@
-/* global suite, test */
+/* global suite */
+/* global test */
 
-// 
-// Note: This example test is leveraging the Mocha test framework.
-// Please refer to their documentation on https://mochajs.org/ for help.
-//
+'use strict';
 
-// The module 'assert' provides assertion methods from node
-var assert = require('assert');
+const assert    = require('assert'),
+      vscode    = require('vscode'),
+      vscodeTfs = require('../lib/vscode-tfs');
 
-// You can import and use all API from the 'vscode' module
-// as well as import your extension to test it
-var vscode = require('vscode');
-var myExtension = require('../extension');
-
-// Defines a Mocha test suite to group tests of similar kind together
-suite("Extension Tests", function() {
-
-	// Defines a Mocha unit test
+suite("VSCode TFS Tests Suite", function() {
 	test("Something 1", function() {
 		assert.equal(-1, [1, 2, 3].indexOf(5));
 		assert.equal(-1, [1, 2, 3].indexOf(0));
