@@ -3,3 +3,5 @@ typings/**
 test/**
 .gitignore
 jsconfig.json
+
+doc/**
