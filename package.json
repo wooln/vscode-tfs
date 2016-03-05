@@ -51,32 +51,8 @@
   "contributes": {
     "commands": [
       {
-        "command": "vscode-tfs.add",
-        "title": "TFS: Add"
-      },
-      {
-        "command": "vscode-tfs.checkin",
-        "title": "TFS: Check In"
-      },
-      {
-        "command": "vscode-tfs.checkout",
-        "title": "TFS: Check Out for Edit"
-      },
-      {
-        "command": "vscode-tfs.get",
-        "title": "TFS: Get Latest Version"
-      },
-      {
         "command": "vscode-tfs.list",
         "title": "TFS: List Commands"
-      },
-      {
-        "command": "vscode-tfs.status",
-        "title": "TFS: Status (Pending Changes)"
-      },
-      {
-        "command": "vscode-tfs.undo",
-        "title": "TFS: Undo Pending Changes"
       }
     ],
     "keybindings": [
