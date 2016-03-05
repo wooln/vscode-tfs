@@ -34,7 +34,7 @@ Hit **`Alt + T`** to list available commands for the current edited file.
 - **Add**
 - **Checkin**
 - **Checkout**
-- **Get**
+- **Get (entire workspace)**
 - **Status (Pending Changes)**
 - **Undo**
 
