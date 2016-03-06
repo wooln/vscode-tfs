@@ -1,12 +1,12 @@
 sudo: false
 
 os:
-  - osx
+  # - osx
   - linux
 
-matrix:
-  allow_failures:
-    - osx
+# matrix:
+#   allow_failures:
+#     - osx
 
 before_install:
   - if [ $TRAVIS_OS_NAME == "linux" ]; then
