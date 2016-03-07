@@ -57,6 +57,14 @@
     ],
     "keybindings": [
       {
+        "command": "vscode-tfs.get",
+        "key": "Alt+G"
+      },
+      {
+        "command": "vscode-tfs.status",
+        "key": "Alt+S"
+      },
+      {
         "command": "vscode-tfs.list",
         "key": "Alt+T"
       }
