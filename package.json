@@ -29,6 +29,7 @@
     "vscode": "^0.10.1"
   },
   "dependencies": {
+    "js-yaml": "^3.5.3",
     "tfs": "^1.4.2"
   },
   "devDependencies": {
