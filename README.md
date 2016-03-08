@@ -27,13 +27,12 @@ Hit **`Alt + T`** to list available commands for the current edited file.
 
 ## Features
 
-- **Auto Check Out for Edit** when a file is saved
+- **Automatic Checkout (for Edit)** when a file is modified.
 
 ### List of available commands
 
 - **Add**
 - **Checkin**
-- **Checkout**
 - **Get (entire workspace)**
 - **Status (Pending Changes)**
 - **Undo**
