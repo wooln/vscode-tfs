@@ -26,7 +26,7 @@
   "homepage": "https://github.com/ivangabriele/vscode-tfs#readme",
   "readmeFilename": "README.md",
   "engines": {
-    "vscode": "^0.10.1"
+    "vscode": "^1.9.0"
   },
   "dependencies": {
     "tfs": "^1.4.2"
@@ -35,11 +35,11 @@
     "grunt": "^1.0.1",
     "grunt-contrib-jshint": "^1.0.0",
     "grunt-githooks": "^0.6.0",
-    "grunt-jsdoc": "^1.1.0",
-    "grunt-mocha-test": "^0.12.7",
-    "jshint-stylish": "^2.1.0",
-    "mocha": "^2.4.5",
-    "vscode": "^0.11.10"
+    "grunt-jsdoc": "^2.1.0",
+    "grunt-mocha-test": "^0.13.2",
+    "jshint-stylish": "^2.2.1",
+    "mocha": "^3.2.0",
+    "vscode": "^1.0.4"
   },
   "scripts": {
     "postinstall": "node ./node_modules/vscode/bin/install",
