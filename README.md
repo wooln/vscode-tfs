@@ -1,5 +1,5 @@
 # TFS extension for Visual Studio Code
-**Visual Studio Code Team Foundation Server integration** _&nbsp; ― &nbsp; This is a work in progress..._
+**Visual Studio Code Team Foundation Server integration**
 
 [![Build Status](https://travis-ci.org/ivangabriele/vscode-tfs.svg?branch=master)](https://travis-ci.org/ivangabriele/vscode-tfs)
 [![npm version](https://badge.fury.io/js/vscode-tfs.svg)](https://badge.fury.io/js/vscode-tfs)
