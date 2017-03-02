@@ -1,7 +1,7 @@
 {
   "name": "vscode-tfs",
   "main": "./lib/vscode-tfs",
-  "version": "0.5.3",
+  "version": "0.6.0",
   "description": "TFS Visual Studio Code integration.",
   "author": {
     "name": "Ivan Gabriele",
