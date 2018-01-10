@@ -1,10 +1,12 @@
 # TFS extension for Visual Studio Code
 **Visual Studio Code Team Foundation Server integration**
 
-[![Build Status](https://travis-ci.org/ivangabriele/vscode-tfs.svg?branch=master)](https://travis-ci.org/ivangabriele/vscode-tfs)
-[![npm version](https://badge.fury.io/js/vscode-tfs.svg)](https://badge.fury.io/js/vscode-tfs)
-[![dependencies Status](https://david-dm.org/ivangabriele/vscode-tfs/status.svg)](https://david-dm.org/ivangabriele/vscode-tfs)
-[![devDependencies Status](https://david-dm.org/ivangabriele/vscode-tfs/dev-status.svg)](https://david-dm.org/ivangabriele/vscode-tfs?type=dev)
+[![The MIT License](https://img.shields.io/badge/license-MIT-orange.svg?style=flat-square)](http://opensource.org/licenses/MIT)
+[![GitHub](https://img.shields.io/github/release/ivangabriele/vscode-tfs.svg?style=flat-square)](https://github.com/ivangabriele/vscode-tfs/releases)
+[![Visual Studio Marketplace](https://vsmarketplacebadge.apphb.com/installs-short/ivangabriele.vscode-tfs.svg?style=flat-square)](https://marketplace.visualstudio.com/items?itemName=ivangabriele.vscode-tfs)
+[![David](https://img.shields.io/david/ivangabriele/vscode-tfs.svg?style=flat-square)](https://david-dm.org/ivangabriele/vscode-tfs?type=dev)
+[![David](https://img.shields.io/david/dev/ivangabriele/vscode-tfs.svg?style=flat-square)](https://david-dm.org/ivangabriele/vscode-tfs?type=dev)
+
 [![NSP Status](https://nodesecurity.io/orgs/ivan-gabriele/projects/06083557-7055-4c2d-a1f0-e9f10c671faf/badge)](https://nodesecurity.io/orgs/ivan-gabriele/projects/06083557-7055-4c2d-a1f0-e9f10c671faf)
 
 ---
