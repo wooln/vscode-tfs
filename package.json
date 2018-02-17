@@ -62,7 +62,17 @@
         "command": "vscode-tfs.list",
         "key": "Alt+T"
       }
-    ]
+    ],
+    "configuration": {
+      "type": "object",
+      "title": "TFS configuration",
+      "properties": {
+        "vscode-tfs.tfPath": {
+          "type": "string",
+          "required": false
+        }
+      }
+    }
   },
   "displayName": "TFS",
   "publisher": "ivangabriele",
