@@ -2,10 +2,10 @@
 **Visual Studio Code Team Foundation Server integration**
 
 [![The MIT License](https://img.shields.io/badge/license-MIT-orange.svg?style=flat-square)](http://opensource.org/licenses/MIT)
-[![GitHub](https://img.shields.io/github/release/ivangabriele/vscode-tfs.svg?style=flat-square)](https://github.com/ivangabriele/vscode-tfs/releases)
-[![Visual Studio Marketplace](https://vsmarketplacebadge.apphb.com/installs-short/ivangabriele.vscode-tfs.svg?style=flat-square)](https://marketplace.visualstudio.com/items?itemName=ivangabriele.vscode-tfs)
-[![David](https://img.shields.io/david/ivangabriele/vscode-tfs.svg?style=flat-square)](https://david-dm.org/ivangabriele/vscode-tfs?type=dev)
-[![David](https://img.shields.io/david/dev/ivangabriele/vscode-tfs.svg?style=flat-square)](https://david-dm.org/ivangabriele/vscode-tfs?type=dev)
+[![GitHub](https://img.shields.io/github/release/generalov/vscode-tfs.svg?style=flat-square)](https://github.com/generalov/vscode-tfs/releases)
+[![Visual Studio Marketplace](https://vsmarketplacebadge.apphb.com/installs-short/generalov.vscode-tfs.svg?style=flat-square)](https://marketplace.visualstudio.com/items?itemName=generalov.vscode-tfs)
+[![David](https://img.shields.io/david/generalov/vscode-tfs.svg?style=flat-square)](https://david-dm.org/generalov/vscode-tfs?type=dev)
+[![David](https://img.shields.io/david/dev/generalov/vscode-tfs.svg?style=flat-square)](https://david-dm.org/generalov/vscode-tfs?type=dev)
 
 [![NSP Status](https://nodesecurity.io/orgs/ivan-gabriele/projects/06083557-7055-4c2d-a1f0-e9f10c671faf/badge)](https://nodesecurity.io/orgs/ivan-gabriele/projects/06083557-7055-4c2d-a1f0-e9f10c671faf)
 
@@ -14,9 +14,6 @@
 ## Important !
 
 > **You MUST have a Visual Studio with Team Foundation Server features to be able to use this extension.**
-
-> **I used TFS because my last company did but I don't use it anymore. So I, and most of this extension users, would be really happy to find some people able to contribute to this extension (and its [tfs](https://github.com/ivangabriele/tfs) dependency) :star:**<br>
-> Contact me if you're willing to help at ivan.gabriele@gmail.com :mailbox:
 
 ## Installation
 
@@ -28,53 +25,47 @@
 6. Select **`TFS`** extension and hit **`ENTER`**
 
 ## Configuration
-You could provide the path to the TF command line client used by the extension to perform TFVC actions.
+You need to provide a path to the TF command line client used by the extension to perform TFS actions.
 To set this path, add the following entry to Settings (**File > Preferences > Settings**):
 ```javascript
-    "vscode-tfs.tfPath": "<path-to-tf-command-line>"
+    "tfs.location": "<path-to-tf-command-line>"
 ```
 If you plan to use the `tf.exe` command line provided by the Visual Studio IDE, the value to provide will be similar to `C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\IDE\\TF.exe`.
 
-## Usage
-
-Hit **`Alt + T`** to list available commands for the current edited file.
-
 ## Features
 
-- **Automatic Checkout (for Edit)** when a file is modified.
+- **Automatic Checkout (for Edit)** on saving a file.
 
 ### List of available commands
 
 - **Add**
-- **Checkin**
-- **Get (entire workspace)**
-- **Status (Pending Changes)**
+- **Checkout**
 - **Undo**
+- **Open In Browser**
 
 ## Issues
 
-Please report any issue or comment [here](https://github.com/ivangabriele/vscode-tfs/issues).
+Please report any issue or comment [here](https://github.com/generalov/vscode-tfs/issues).
 
 ## Contribute
 
 To be able to contribute to TFS development, you need to be at ease with **NodeJS** language and **Git** usage.
 
-    git clone https://github.com/ivangabriele/vscode-tfs.git
+    git clone https://github.com/generalov/vscode-tfs.git
     cd vscode-tfs
     npm install
-    npm install grunt-cli -g
-    grunt githooks
 
-The last command create a `pre-commit` hook to ensure that you don't commit anything if tests fail.
+## About the fork
 
-## Roadmap
+This is a fork of [ivangabriele.vscode-tfs ](https://marketplace.visualstudio.com/items/ivangabriele.vscode-tfs) extension by Ivan Gabriele. Changes are:
 
-1. **Checkin multiple files**
-2. File name in status bar message (when suitable)
-3. **Exclude** command
+* Configurable path to `tf.exe` binary
+* New TFS menu commands
+* Fixed checkout for edit on save
+* Improved error handling
 
 #### Links
 
-- [TFS extension on Github](https://github.com/ivangabriele/vscode-tfs)
-- [TFS extension on Visual Studio Market Place](https://marketplace.visualstudio.com/items/ivangabriele.vscode-tfs)
-- [MIT Licence](https://github.com/ivangabriele/vscode-tfs/blob/master/LICENCE)
+- [TFS extension on Github](https://github.com/generalov/vscode-tfs)
+- [TFS extension on Visual Studio Market Place](https://marketplace.visualstudio.com/items/generalov.vscode-tfs)
+- [MIT Licence](https://github.com/generalov/vscode-tfs/blob/master/LICENCE)

@@ -1,14 +1,15 @@
 {
   "name": "vscode-tfs",
-  "main": "./lib/vscode-tfs",
-  "version": "0.6.0",
+  "main": "./lib/extension",
+  "version": "0.7.0",
   "description": "TFS Visual Studio Code integration.",
   "author": {
-    "name": "Ivan Gabriele",
-    "email": "ivan.gabriele@gmail.com",
-    "url": "http://www.ivangabriele.com"
+    "name": "Evgeniy Generalov",
+    "email": "e.generalov@gmail.com",
+    "url": "https://github.com/generalov"
   },
-  "license": "MIT",
+  "publisher": "generalov",
+  "license": "SEE LICENSE IN LICENSE",
   "keywords": [
     "tfs",
     "team",
@@ -18,26 +19,32 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ivangabriele/vscode-tfs.git"
+    "url": "git+https://github.com/generalov/vscode-tfs.git"
   },
   "bugs": {
-    "url": "https://github.com/ivangabriele/vscode-tfs/issues"
+    "url": "https://github.com/generalov/vscode-tfs/issues"
   },
-  "homepage": "https://github.com/ivangabriele/vscode-tfs#readme",
+  "homepage": "https://github.com/generalov/vscode-tfs#readme",
   "readmeFilename": "README.md",
   "engines": {
-    "vscode": "^1.19.1"
+    "vscode": "^1.20.1"
   },
   "dependencies": {
-    "tfs": "^1.4.2"
+    "child-process-promise": "^2.2.1"
   },
   "devDependencies": {
-    "mocha": "^4.1.0",
+    "eslint": "4.18.1",
+    "eslint-config-prettier": "2.9.0",
+    "eslint-plugin-mocha": "4.11.0",
+    "eslint-plugin-prettier": "2.6.0",
+    "mocha": "^5.0.1",
+    "prettier": "^1.11.0",
     "vscode": "^1.1.10"
   },
   "scripts": {
     "postinstall": "node ./node_modules/vscode/bin/install",
-    "test": "node ./node_modules/vscode/bin/test"
+    "test": "node ./node_modules/vscode/bin/test",
+    "build": "vsce package"
   },
   "activationEvents": [
     "*"
@@ -49,25 +56,11 @@
         "title": "TFS: List Commands"
       }
     ],
-    "keybindings": [
-      {
-        "command": "vscode-tfs.get",
-        "key": "Alt+G"
-      },
-      {
-        "command": "vscode-tfs.status",
-        "key": "Alt+S"
-      },
-      {
-        "command": "vscode-tfs.list",
-        "key": "Alt+T"
-      }
-    ],
     "configuration": {
       "type": "object",
       "title": "TFS configuration",
       "properties": {
-        "vscode-tfs.tfPath": {
+        "tfs.location": {
           "type": "string",
           "required": false
         }
@@ -75,7 +68,6 @@
     }
   },
   "displayName": "TFS",
-  "publisher": "ivangabriele",
   "icon": "res/icon.png",
   "galleryBanner": {
     "color": "#912a2a",
