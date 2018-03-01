@@ -1,8 +1,8 @@
 {
   "name": "vscode-tfs",
-  "main": "./lib/extension",
-  "version": "0.7.0",
+  "displayName": "TFS",
   "description": "TFS Visual Studio Code integration.",
+  "version": "1.0.0",
   "author": {
     "name": "Evgeniy Generalov",
     "email": "e.generalov@gmail.com",
@@ -26,6 +26,7 @@
   },
   "homepage": "https://github.com/generalov/vscode-tfs#readme",
   "readmeFilename": "README.md",
+  "main": "./lib/extension",
   "engines": {
     "vscode": "^1.20.1"
   },
@@ -43,7 +44,8 @@
   },
   "scripts": {
     "postinstall": "node ./node_modules/vscode/bin/install",
-    "test": "node ./node_modules/vscode/bin/test",
+    "test": "mocha ./test/**/*.test.js",
+    "release": "vsce publish patch",
     "build": "vsce package"
   },
   "activationEvents": [
@@ -62,12 +64,12 @@
       "properties": {
         "tfs.location": {
           "type": "string",
-          "required": false
+          "required": true,
+          "description": "Path to the TFS command line client (tf.exe)."
         }
       }
     }
   },
-  "displayName": "TFS",
   "icon": "res/icon.png",
   "galleryBanner": {
     "color": "#912a2a",

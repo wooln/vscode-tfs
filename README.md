@@ -7,8 +7,6 @@
 [![David](https://img.shields.io/david/generalov/vscode-tfs.svg?style=flat-square)](https://david-dm.org/generalov/vscode-tfs?type=dev)
 [![David](https://img.shields.io/david/dev/generalov/vscode-tfs.svg?style=flat-square)](https://david-dm.org/generalov/vscode-tfs?type=dev)
 
-[![NSP Status](https://nodesecurity.io/orgs/ivan-gabriele/projects/06083557-7055-4c2d-a1f0-e9f10c671faf/badge)](https://nodesecurity.io/orgs/ivan-gabriele/projects/06083557-7055-4c2d-a1f0-e9f10c671faf)
-
 ---
 
 ## Important !
@@ -54,10 +52,12 @@ To be able to contribute to TFS development, you need to be at ease with **NodeJ
     git clone https://github.com/generalov/vscode-tfs.git
     cd vscode-tfs
     npm install
+    npm test
 
 ## About the fork
 
-This is a fork of [ivangabriele.vscode-tfs ](https://marketplace.visualstudio.com/items/ivangabriele.vscode-tfs) extension by Ivan Gabriele. Changes are:
+This is a fork of [ivangabriele.vscode-tfs](https://marketplace.visualstudio.com/items/ivangabriele.vscode-tfs)
+extension by Ivan Gabriele with changes. The changes are:
 
 * Configurable path to `tf.exe` binary
 * New TFS menu commands
