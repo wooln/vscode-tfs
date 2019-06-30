@@ -8,6 +8,13 @@
         "email": "e.generalov@gmail.com",
         "url": "https://github.com/generalov"
     },
+    "contributors": [
+        {
+            "name": "Aaron Stevens",
+            "email": "bheklilr2@gmail.com",
+            "url": "https://github.com/bheklilr/vscode-tfs"
+        }
+    ],
     "publisher": "generalov",
     "license": "SEE LICENSE IN LICENSE",
     "keywords": [
