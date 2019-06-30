@@ -44,6 +44,7 @@ If you plan to use the `tf.exe` command line provided by the Visual Studio IDE, 
 * **Checkout**
 * **Undo**
 * **Open In Browser**
+* **Delete**
 
 ## Issues
 
