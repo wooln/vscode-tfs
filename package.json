@@ -2,7 +2,7 @@
     "name": "vscode-tfs",
     "displayName": "TFS",
     "description": "TFS Visual Studio Code integration.",
-    "version": "1.0.2",
+    "version": "1.1.0",
     "author": {
         "name": "Evgeniy Generalov",
         "email": "e.generalov@gmail.com",
@@ -49,10 +49,63 @@
     "contributes": {
         "commands": [
             {
-                "command": "vscode-tfs.list",
-                "title": "TFS: List Commands"
+                "command": "vscode-tfs.menu",
+                "title": "TFS Commands..."
+            },
+            {
+                "command": "vscode-tfs.checkout",
+                "title": "Checkout File",
+                "category": "TFS"
+            },
+            {
+                "command": "vscode-tfs.add",
+                "title": "Add File",
+                "category": "TFS"
+            },
+            {
+                "command": "vscode-tfs.undo",
+                "title": "Undo Changes",
+                "category": "TFS"
+            },
+            {
+                "command": "vscode-tfs.open-in-browser",
+                "title": "Open in Browser",
+                "category": "TFS"
+            },
+            {
+                "command": "vscode-tfs.delete",
+                "title": "Delete File",
+                "category": "TFS"
             }
         ],
+        "menus": {
+            "commandPalette": [
+                {
+                    "command": "vscode-tfs.menu",
+                    "when": "false"
+                },
+                {
+                    "command": "vscode-tfs.checkout"
+                },
+                {
+                    "command": "vscode-tfs.add"
+                },
+                {
+                    "command": "vscode-tfs.undo"
+                },
+                {
+                    "command": "vscode-tfs.open-in-browser"
+                },
+                {
+                    "command": "vscode-tfs.delete"
+                }
+            ],
+            "explorer/context": [
+                {
+                    "command": "vscode-tfs.menu"
+                }
+            ]
+        },
         "configuration": {
             "type": "object",
             "title": "TFS configuration",
