@@ -8,11 +8,13 @@
         "email": "e.generalov@gmail.com",
         "url": "https://github.com/generalov"
     },
-    "contributors": [{
-        "name": "Aaron Stevens",
-        "email": "bheklilr2@gmail.com",
-        "url": "https://github.com/bheklilr/vscode-tfs"
-    }],
+    "contributors": [
+        {
+            "name": "Aaron Stevens",
+            "email": "bheklilr2@gmail.com",
+            "url": "https://github.com/bheklilr/vscode-tfs"
+        }
+    ],
     "publisher": "generalov",
     "license": "SEE LICENSE IN LICENSE",
     "keywords": [
@@ -45,7 +47,8 @@
         "*"
     ],
     "contributes": {
-        "commands": [{
+        "commands": [
+            {
                 "command": "vscode-tfs.add",
                 "title": "Add",
                 "category": "TFS"
@@ -77,14 +80,18 @@
             }
         ],
         "menus": {
-            "commandPalette": [{
-                "command": "vscode-tfs.menu",
-                "when": "false"
-            }],
-            "explorer/context": [{
-                "command": "vscode-tfs.menu",
-                "group": "2_workspace"
-            }]
+            "commandPalette": [
+                {
+                    "command": "vscode-tfs.menu",
+                    "when": "false"
+                }
+            ],
+            "explorer/context": [
+                {
+                    "command": "vscode-tfs.menu",
+                    "group": "2_workspace"
+                }
+            ]
         },
         "configuration": {
             "type": "object",
