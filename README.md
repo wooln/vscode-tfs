@@ -10,18 +10,18 @@
 
 ---
 
-## Important !
+## Important!
 
 > **You MUST have a Visual Studio with Team Foundation Server features to be able to use this extension.**
 
 ## Installation
 
-1.  Open up VS Code
-2.  Type **`F1`**
-3.  Type `ext` in command palette.
-4.  Select `Extensions: Install Extension` and hit **`ENTER`**
-5.  Type `tfs`
-6.  Select **`TFS`** extension and hit **`ENTER`**
+1. Open up VS Code
+2. Type **`F1`**
+3. Type `ext` in command palette.
+4. Select `Extensions: Install Extension` and hit **`ENTER`**
+5. Type `tfs`
+6. Select **`TFS`** extension and hit **`ENTER`**
 
 ## Configuration
 
@@ -36,15 +36,15 @@ If you plan to use the `tf.exe` command line provided by the Visual Studio IDE, 
 
 ## Features
 
-* **Automatic Checkout (for Edit)** on saving a file.
+- **Automatic Checkout (for Edit)** on saving a file.
 
 ### List of available commands
 
-* **Add**
-* **Check Out for Edit**
-* **Delete**
-* **Undo Pending Changes**
-* **Open in Browser**
+- **Add** `vscode-tfs.add`
+- **Check Out for Edit** `vscode-tfs.checkout`
+- **Delete** `vscode-tfs.delete`
+- **Undo Pending Changes** `vscode-tfs.undo`
+- **Open in Browser** `vscode-tfs.openInBrowser`
 
 ## Issues
 
@@ -54,22 +54,24 @@ Please report any issue or comment [here](https://github.com/generalov/vscode-tf
 
 To be able to contribute to TFS development, you need to be at ease with **NodeJS** language and **Git** usage.
 
-    git clone https://github.com/generalov/vscode-tfs.git
-    cd vscode-tfs
-    npm install
-    npm test
+```sh
+git clone https://github.com/generalov/vscode-tfs.git
+cd vscode-tfs
+npm install
+npm test
+```
 
 ## About the fork
 
 This is a fork of [ivangabriele.vscode-tfs](https://github.com/ivangabriele/vscode-tfs). The changes are:
 
-* Configurable path to `tf.exe` binary.
-* New TFS menu commands.
-* Fixed checkout for edit on save.
-* Improved error handling.
+- Configurable path to `tf.exe` binary.
+- New TFS menu commands.
+- Fixed checkout for edit on save.
+- Improved error handling.
 
-#### Links
+## Links
 
-* [TFS extension on Visual Studio Market Place](https://marketplace.visualstudio.com/items/generalov.vscode-tfs)
-* [TFS extension on Github](https://github.com/generalov/vscode-tfs)
-* [MIT Licence](https://github.com/generalov/vscode-tfs/blob/master/LICENCE)
+- [TFS extension on Visual Studio Market Place](https://marketplace.visualstudio.com/items/generalov.vscode-tfs)
+- [TFS extension on Github](https://github.com/generalov/vscode-tfs)
+- [MIT Licence](https://github.com/generalov/vscode-tfs/blob/master/LICENCE)
