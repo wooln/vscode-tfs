@@ -8,13 +8,11 @@
         "email": "e.generalov@gmail.com",
         "url": "https://github.com/generalov"
     },
-    "contributors": [
-        {
-            "name": "Aaron Stevens",
-            "email": "bheklilr2@gmail.com",
-            "url": "https://github.com/bheklilr/vscode-tfs"
-        }
-    ],
+    "contributors": [{
+        "name": "Aaron Stevens",
+        "email": "bheklilr2@gmail.com",
+        "url": "https://github.com/bheklilr/vscode-tfs"
+    }],
     "publisher": "generalov",
     "license": "SEE LICENSE IN LICENSE",
     "keywords": [
@@ -47,64 +45,46 @@
         "*"
     ],
     "contributes": {
-        "commands": [
-            {
-                "command": "vscode-tfs.menu",
-                "title": "TFS Commands..."
+        "commands": [{
+                "command": "vscode-tfs.add",
+                "title": "Add",
+                "category": "TFS"
             },
             {
                 "command": "vscode-tfs.checkout",
-                "title": "Checkout File",
-                "category": "TFS"
-            },
-            {
-                "command": "vscode-tfs.add",
-                "title": "Add File",
-                "category": "TFS"
-            },
-            {
-                "command": "vscode-tfs.undo",
-                "title": "Undo Changes",
-                "category": "TFS"
-            },
-            {
-                "command": "vscode-tfs.open-in-browser",
-                "title": "Open in Browser",
+                "title": "Check Out for Edit",
                 "category": "TFS"
             },
             {
                 "command": "vscode-tfs.delete",
-                "title": "Delete File",
+                "title": "Delete",
+                "category": "TFS"
+            },
+            {
+                "command": "vscode-tfs.undo",
+                "title": "Undo Pending Changes",
+                "category": "TFS"
+            },
+            {
+                "command": "vscode-tfs.openInBrowser",
+                "title": "Open in Browser",
+                "category": "TFS"
+            },
+            {
+                "command": "vscode-tfs.menu",
+                "title": "Team Foundation Server...",
                 "category": "TFS"
             }
         ],
         "menus": {
-            "commandPalette": [
-                {
-                    "command": "vscode-tfs.menu",
-                    "when": "false"
-                },
-                {
-                    "command": "vscode-tfs.checkout"
-                },
-                {
-                    "command": "vscode-tfs.add"
-                },
-                {
-                    "command": "vscode-tfs.undo"
-                },
-                {
-                    "command": "vscode-tfs.open-in-browser"
-                },
-                {
-                    "command": "vscode-tfs.delete"
-                }
-            ],
-            "explorer/context": [
-                {
-                    "command": "vscode-tfs.menu"
-                }
-            ]
+            "commandPalette": [{
+                "command": "vscode-tfs.menu",
+                "when": "false"
+            }],
+            "explorer/context": [{
+                "command": "vscode-tfs.menu",
+                "group": "2_workspace"
+            }]
         },
         "configuration": {
             "type": "object",
@@ -135,6 +115,6 @@
         "eslint-plugin-prettier": "3.1.0",
         "mocha": "^6.1.4",
         "prettier": "^1.18.2",
-        "vscode": "^1.1.10"
+        "vscode": "^1.1.35"
     }
 }

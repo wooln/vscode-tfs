@@ -41,10 +41,10 @@ If you plan to use the `tf.exe` command line provided by the Visual Studio IDE, 
 ### List of available commands
 
 * **Add**
-* **Checkout**
-* **Undo**
-* **Open In Browser**
+* **Check Out for Edit**
 * **Delete**
+* **Undo Pending Changes**
+* **Open in Browser**
 
 ## Issues
 
@@ -61,7 +61,7 @@ To be able to contribute to TFS development, you need to be at ease with **NodeJ
 
 ## About the fork
 
-This is a fork of [ivangabriele.vscode-tfs](https://marketplace.visualstudio.com/items/ivangabriele.vscode-tfs). The changes are:
+This is a fork of [ivangabriele.vscode-tfs](https://github.com/ivangabriele/vscode-tfs). The changes are:
 
 * Configurable path to `tf.exe` binary.
 * New TFS menu commands.
@@ -70,6 +70,6 @@ This is a fork of [ivangabriele.vscode-tfs](https://marketplace.visualstudio.com
 
 #### Links
 
-* [TFS extension on Github](https://github.com/generalov/vscode-tfs)
 * [TFS extension on Visual Studio Market Place](https://marketplace.visualstudio.com/items/generalov.vscode-tfs)
+* [TFS extension on Github](https://github.com/generalov/vscode-tfs)
 * [MIT Licence](https://github.com/generalov/vscode-tfs/blob/master/LICENCE)
