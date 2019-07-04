@@ -88,8 +88,12 @@
             ],
             "explorer/context": [
                 {
-                    "command": "vscode-tfs.menu",
-                    "group": "2_workspace"
+                    "command": "vscode-tfs.menu"
+                }
+            ],
+            "editor/title/context": [
+                {
+                    "command": "vscode-tfs.menu"
                 }
             ]
         },
