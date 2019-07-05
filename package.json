@@ -44,7 +44,12 @@
         "fix": "prettier --write \"lib/**/*.js\" \"test/**/*.js\""
     },
     "activationEvents": [
-        "*"
+        "onCommand:vscode-tfs.add",
+        "onCommand:vscode-tfs.checkout",
+        "onCommand:vscode-tfs.delete",
+        "onCommand:vscode-tfs.undo",
+        "onCommand:vscode-tfs.openInBrowser",
+        "onCommand:vscode-tfs.menu"
     ],
     "contributes": {
         "commands": [
