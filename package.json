@@ -38,9 +38,9 @@
         "vscode": "^1.20.1"
     },
     "scripts": {
-        "test": "mocha ./test/**/*.test.js",
-        "lint": "eslint \"lib/**/*.js\" \"test/**/*.js\"",
-        "fix": "prettier --write \"lib/**/*.js\" \"test/**/*.js\""
+        "test": "mocha ./lib/**/*.test.js",
+        "lint": "eslint \"lib/**/*.js\"",
+        "fix": "prettier --write \"lib/**/*.js\""
     },
     "activationEvents": [
         "onCommand:vscode-tfs.add",
