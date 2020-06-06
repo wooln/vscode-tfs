@@ -34,11 +34,7 @@ To set this path, add the following entry to Settings (**File > Preferences > Se
 
 If you plan to use the `tf.exe` command line provided by the Visual Studio IDE, the value to provide will be similar to `C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\IDE\\TF.exe`.
 
-## Features
-
-- **Automatic Checkout (for Edit)** on saving a file.
-
-### List of available commands
+## List of available commands
 
 - **Add** `vscode-tfs.add`
 - **Check Out for Edit** `vscode-tfs.checkout`
@@ -67,7 +63,6 @@ This is a fork of [ivangabriele.vscode-tfs](https://github.com/ivangabriele/vsco
 
 - Configurable path to `tf.exe` binary.
 - New TFS menu commands.
-- Fixed checkout for edit on save.
 - Improved error handling.
 
 ## Links

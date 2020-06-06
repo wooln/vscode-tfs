@@ -121,8 +121,7 @@
         "Other"
     ],
     "dependencies": {
-        "child-process-promise": "^2.2.1",
-        "winattr": "^3.0.0"
+        "child-process-promise": "^2.2.1"
     },
     "devDependencies": {
         "eslint": "7.2.0",
