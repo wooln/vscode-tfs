@@ -1,10 +1,10 @@
 import * as vscode from "vscode"
 
-export function showMessage(message: string): Thenable<unknown> {
+export function showMessage(message: string): Thenable<string | undefined> {
   return vscode.window.showInformationMessage(message)
 }
 
-export function showErrorMessage(message: string): Thenable<unknown> {
+export function showErrorMessage(message: string): Thenable<string | undefined> {
   return vscode.window.showErrorMessage(message)
 }
 
@@ -13,7 +13,7 @@ export function showStatus<T>(message: string, hideWhenDone: Thenable<T>): Thena
   return hideWhenDone
 }
 
-export function revert(uri: vscode.Uri): Thenable<unknown> {
+export function revert<T>(uri: vscode.Uri): Thenable<T | undefined> {
   return vscode.commands.executeCommand("workbench.action.files.revert", uri)
 }
 

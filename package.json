@@ -38,8 +38,8 @@
         "vscode": "^1.45.1"
     },
     "scripts": {
-        "precompile": "yarn run rimraf dist",
         "vscode:prepublish": "yarn run compile",
+        "precompile": "yarn run rimraf dist/*",
         "compile": "tsc -p ./",
         "pretest": "yarn run compile && yarn run lint",
         "test": "mocha -r ts-node/register \"src/**/*.spec.ts\"",
