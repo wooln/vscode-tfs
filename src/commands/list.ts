@@ -28,7 +28,7 @@ const items = {
   },
 }
 
-export async function menu(uri: vscode.Uri): Promise<void> {
+export async function list(uri: vscode.Uri): Promise<void> {
   const selectedItem = await vscode.window.showQuickPick(Object.values(items))
   if (selectedItem) {
     return vscode.commands.executeCommand(selectedItem.command, uri)

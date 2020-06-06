@@ -1,50 +1,39 @@
 {
     "name": "vscode-tfs",
-    "displayName": "TFS",
+    "version": "2.0.0",
     "description": "TFS Visual Studio Code integration.",
-    "version": "1.2.0",
-    "author": {
-        "name": "Evgeniy Generalov",
-        "email": "e.generalov@gmail.com",
-        "url": "https://github.com/generalov"
-    },
-    "contributors": [
-        {
-            "name": "Aaron Stevens",
-            "email": "bheklilr2@gmail.com",
-            "url": "https://github.com/bheklilr/vscode-tfs"
-        }
-    ],
-    "publisher": "generalov",
     "license": "SEE LICENSE IN LICENSE",
-    "keywords": [
-        "tfs",
-        "team",
-        "foundation",
-        "server",
-        "microsoft"
-    ],
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/generalov/vscode-tfs.git"
-    },
-    "bugs": {
-        "url": "https://github.com/generalov/vscode-tfs/issues"
-    },
-    "homepage": "https://github.com/generalov/vscode-tfs#readme",
-    "readmeFilename": "README.md",
-    "main": "./dist/extension",
-    "engines": {
-        "vscode": "^1.45.1"
-    },
+    "main": "./out/extension",
     "scripts": {
         "vscode:prepublish": "yarn run compile",
-        "precompile": "yarn run rimraf dist/*",
+        "precompile": "yarn run rimraf out",
         "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
         "pretest": "yarn run compile && yarn run lint",
         "test": "mocha -r ts-node/register \"src/**/*.spec.ts\"",
         "lint": "eslint src --ext ts",
         "fix": "prettier --write \"src/**/*.ts\""
+    },
+    "dependencies": {
+    },
+    "devDependencies": {
+        "@types/mocha": "^7.0.2",
+        "@types/node": "^13.11.0",
+        "@types/vscode": "^1.45.1",
+        "@typescript-eslint/eslint-plugin": "^3.1.0",
+        "@typescript-eslint/parser": "^3.1.0",
+        "eslint": "7.2.0",
+        "eslint-config-prettier": "^6.11.0",
+        "eslint-plugin-mocha": "7.0.1",
+        "eslint-plugin-prettier": "^3.1.3",
+        "mocha": "^7.2.0",
+        "prettier": "^2.0.5",
+        "rimraf": "^3.0.2",
+        "ts-node": "^8.10.2",
+        "typescript": "^3.9.5"
+    },
+    "engines": {
+        "vscode": "^1.45.1"
     },
     "activationEvents": [
         "onCommand:vscode-tfs.add",
@@ -52,7 +41,7 @@
         "onCommand:vscode-tfs.delete",
         "onCommand:vscode-tfs.undo",
         "onCommand:vscode-tfs.openInBrowser",
-        "onCommand:vscode-tfs.menu"
+        "onCommand:vscode-tfs.list"
     ],
     "contributes": {
         "commands": [
@@ -82,7 +71,7 @@
                 "category": "TFS"
             },
             {
-                "command": "vscode-tfs.menu",
+                "command": "vscode-tfs.list",
                 "title": "Team Foundation Server...",
                 "category": "TFS"
             }
@@ -90,18 +79,18 @@
         "menus": {
             "commandPalette": [
                 {
-                    "command": "vscode-tfs.menu",
+                    "command": "vscode-tfs.list",
                     "when": "false"
                 }
             ],
             "explorer/context": [
                 {
-                    "command": "vscode-tfs.menu"
+                    "command": "vscode-tfs.list"
                 }
             ],
             "editor/title/context": [
                 {
-                    "command": "vscode-tfs.menu"
+                    "command": "vscode-tfs.list"
                 }
             ]
         },
@@ -114,8 +103,37 @@
                     "description": "Path to the TFS command line client (tf.exe)."
                 }
             }
-        }
+        },
+        "keybindings": [
+            {
+              "command": "vscode-tfs.list",
+              "key": "Alt+T"
+            }
+        ]
     },
+    "homepage": "https://github.com/generalov/vscode-tfs#readme",
+    "author": {
+        "name": "Evgeniy Generalov",
+        "email": "e.generalov@gmail.com",
+        "url": "https://github.com/generalov"
+    },
+    "contributors": [
+        {
+            "name": "Aaron Stevens",
+            "email": "bheklilr2@gmail.com",
+            "url": "https://github.com/bheklilr/vscode-tfs"
+        }
+    ],
+    "publisher": "generalov",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/generalov/vscode-tfs.git"
+    },
+    "bugs": {
+        "url": "https://github.com/generalov/vscode-tfs/issues"
+    },
+    "readmeFilename": "README.md",
+    "displayName": "TFS",
     "icon": "res/icon.png",
     "galleryBanner": {
         "color": "#912a2a",
@@ -124,22 +142,11 @@
     "categories": [
         "Other"
     ],
-    "dependencies": {
-    },
-    "devDependencies": {
-        "@types/mocha": "^7.0.2",
-        "@types/node": "^13.11.0",
-        "@types/vscode": "^1.45.1",
-        "@typescript-eslint/eslint-plugin": "^3.1.0",
-        "@typescript-eslint/parser": "^3.1.0",
-        "eslint": "7.2.0",
-        "eslint-config-prettier": "^6.11.0",
-        "eslint-plugin-mocha": "7.0.1",
-        "eslint-plugin-prettier": "^3.1.3",
-        "mocha": "^7.2.0",
-        "prettier": "^2.0.5",
-        "rimraf": "^3.0.2",
-        "ts-node": "^8.10.2",
-        "typescript": "^3.9.5"
-    }
+    "keywords": [
+        "tfs",
+        "team",
+        "foundation",
+        "server",
+        "microsoft"
+    ]
 }

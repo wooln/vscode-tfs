@@ -34,6 +34,10 @@ To set this path, add the following entry to Settings (**File > Preferences > Se
 
 If you plan to use the `tf.exe` command line provided by the Visual Studio IDE, the value to provide will be similar to `C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\IDE\\TF.exe`.
 
+## Usage
+
+Hit **`Alt + T`** to list available commands for the current edited file.
+
 ## List of available commands
 
 - **Add** `vscode-tfs.add`

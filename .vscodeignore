@@ -5,7 +5,7 @@
 .vscode/**
 *.log
 *.spec.*
-dist/**/*.map
+out/**/*.map
 fixtures/**
 res/icon.xcf
 src/**

@@ -1,14 +1,16 @@
 import * as vscode from "vscode"
-import * as actions from "./actions"
-import { handle } from "./ui"
+import * as commands from "./commands"
+import { handle } from "./executor"
 
 export function activate(context: vscode.ExtensionContext): void {
-  context.subscriptions.push(vscode.commands.registerCommand("vscode-tfs.add", handle(actions.add)))
-  context.subscriptions.push(vscode.commands.registerCommand("vscode-tfs.checkout", handle(actions.checkout)))
-  context.subscriptions.push(vscode.commands.registerCommand("vscode-tfs.delete", handle(actions.del)))
-  context.subscriptions.push(vscode.commands.registerCommand("vscode-tfs.undo", handle(actions.undo)))
-  context.subscriptions.push(vscode.commands.registerCommand("vscode-tfs.openInBrowser", handle(actions.openInBrowser)))
-  context.subscriptions.push(vscode.commands.registerCommand("vscode-tfs.menu", handle(actions.menu)))
+  context.subscriptions.push(vscode.commands.registerCommand("vscode-tfs.add", handle(commands.add)))
+  context.subscriptions.push(vscode.commands.registerCommand("vscode-tfs.checkout", handle(commands.checkout)))
+  context.subscriptions.push(vscode.commands.registerCommand("vscode-tfs.delete", handle(commands.del)))
+  context.subscriptions.push(vscode.commands.registerCommand("vscode-tfs.list", handle(commands.list)))
+  context.subscriptions.push(
+    vscode.commands.registerCommand("vscode-tfs.openInBrowser", handle(commands.openInBrowser))
+  )
+  context.subscriptions.push(vscode.commands.registerCommand("vscode-tfs.undo", handle(commands.undo)))
 }
 
 // eslint-disable-next-line @typescript-eslint/no-empty-function
