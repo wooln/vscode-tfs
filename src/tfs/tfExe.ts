@@ -1,14 +1,19 @@
 import * as vscode from "vscode"
-import { spawn, SpawnPromiseResult } from "child-process-promise"
+import { promisify } from "util"
+import { execFile } from "child_process"
 
-export async function tf(args: Array<string>): Promise<SpawnPromiseResult> {
+const pExecFile = promisify(execFile)
+
+export async function tf(args: Array<string>): Promise<{ stdout: string; stderr: string }> {
   const tfPath: string | undefined = vscode.workspace.getConfiguration("tfs").get("location")
 
   if (!tfPath) {
     throw new Error("tf.exe path is not configured")
   }
 
-  return spawn(tfPath, args, { capture: ["stdout", "stderr"] }).catch((err) => {
-    throw err.stderr ? new Error(err.stderr) : err
-  })
+  try {
+    return pExecFile(tfPath, args)
+  } catch (err) {
+    throw new Error(err.stderr ? err.stderr : err.message)
+  }
 }
