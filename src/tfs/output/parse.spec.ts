@@ -1,13 +1,15 @@
-const assert = require("assert")
-const fs = require("fs")
-const path = require("path")
-const parse = require("./parse")
+import assert from "assert"
+import fs from "fs"
+import path from "path"
+import { parse } from "./parse"
 
-const readFixture = (...args) => fs.readFileSync(path.join(__dirname, "..", "..", "..", "fixtures", ...args))
+function readFixture(...args: Array<string>): string {
+  return fs.readFileSync(path.join(__dirname, "..", "..", "..", "fixtures", ...args), "utf8")
+}
 
 describe("parse.info", function () {
   it("should parse empty string", function () {
-    assert.deepEqual(null, parse.info(""))
+    assert.deepEqual(null, parse(""))
   })
 
   it("should parse string", function () {
@@ -34,7 +36,7 @@ describe("parse.info", function () {
           type: "file",
         },
       },
-      parse.info(infoEditStdout)
+      parse(infoEditStdout)
     )
   })
 
@@ -47,7 +49,7 @@ describe("parse.info", function () {
           localPath: "D:\\data\\prj\\main.css.map",
         },
       },
-      parse.info(infoDoesNotExistStdout)
+      parse(infoDoesNotExistStdout)
     )
   })
 
@@ -62,7 +64,7 @@ describe("parse.info", function () {
           "$/prj/server/index.js": "D:\\data\\server\\index.js",
         },
       },
-      parse.info(workfoldStdout)
+      parse(workfoldStdout)
     )
   })
 })

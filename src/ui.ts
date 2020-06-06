@@ -1,19 +1,19 @@
-const vscode = require("vscode")
+import * as vscode from "vscode"
 
-async function showMessage(message) {
+export function showMessage(message: string): Thenable<unknown> {
   return vscode.window.showInformationMessage(message)
 }
 
-async function showErrorMessage(message) {
+export function showErrorMessage(message: string): Thenable<unknown> {
   return vscode.window.showErrorMessage(message)
 }
 
-function showStatus(message, hideWhenDone) {
+export function showStatus<T>(message: string, hideWhenDone: Thenable<T>): Thenable<T> {
   vscode.window.setStatusBarMessage(message, hideWhenDone)
   return hideWhenDone
 }
 
-async function revert(uri) {
+export function revert(uri: vscode.Uri): Thenable<unknown> {
   return vscode.commands.executeCommand("workbench.action.files.revert", uri)
 }
 
@@ -22,29 +22,23 @@ function getActiveDocument() {
   return document && !document.isUntitled ? document : undefined
 }
 
-function handle(action) {
-  return async (uri) => {
+export function handle(action: (uri: vscode.Uri) => Promise<void>) {
+  return async (uri: vscode.Uri | undefined): Promise<void> => {
     if (!uri) {
       const document = getActiveDocument()
       uri = document ? document.uri : undefined
     }
 
+    if (!uri) {
+      throw new Error("Unknown path")
+    }
+
     try {
-      await action({ uri })
+      await action(uri)
     } catch (e) {
       await showErrorMessage(String(e))
     } finally {
-      showStatus(undefined, Promise.resolve())
+      showStatus("", Promise.resolve())
     }
   }
 }
-
-const ui = {
-  showStatus,
-  showMessage,
-  showErrorMessage,
-  revert,
-  handle,
-}
-
-module.exports = ui

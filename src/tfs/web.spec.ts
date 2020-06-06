@@ -1,5 +1,5 @@
-const assert = require("assert")
-const { buildVersionControlUrl } = require("./web")
+import * as assert from "assert"
+import { buildVersionControlUrl } from "./web"
 
 describe("tf.web.buildVersionControlUrl", function () {
   it("should build url", function () {

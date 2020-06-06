@@ -1,5 +1,5 @@
-const assert = require("assert")
-const labelToKey = require("./labelToKey")
+import assert from "assert"
+import { labelToKey } from "./labelToKey"
 
 describe("parse.labelToKey", function () {
   it("should handle empty string", function () {

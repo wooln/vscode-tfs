@@ -1,4 +1,4 @@
-function labelToKey(str) {
+export function labelToKey(str: string): string {
   if (!str) {
     return ""
   }
@@ -9,5 +9,3 @@ function labelToKey(str) {
 
   return key[0].toLowerCase() + key.substr(1)
 }
-
-module.exports = labelToKey

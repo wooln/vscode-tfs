@@ -1,12 +1,14 @@
-const labelToKey = require("./labelToKey")
+import { labelToKey } from "./labelToKey"
 
-function info(str) {
+const tok = (indent: string, value: any) => ({ indent, value })
+
+export function parse(str: string): unknown {
   const noItemsMatchRe = /^No items match\s+(.+)/
   const lineRe = /(\s*)(?:([=]{3,})|(?:([^:]+):(.*)))(?:\r\n)/g
-  const tok = (indent, value) => ({ indent, value })
   const stack = []
-  let current = {}
-  let prevKey, matches
+  let current: Record<string, any> = {}
+  let prevKey: string | undefined
+  let matches
 
   if (!str) {
     return null
@@ -30,7 +32,7 @@ function info(str) {
     const key = labelToKey(_key.trim())
     const value = _value.substr(1)
 
-    if (indent.length > stack[stack.length - 1].indent.length) {
+    if (prevKey && indent.length > stack[stack.length - 1].indent.length) {
       if (current[prevKey]) {
         prevKey += "Items"
       }
@@ -49,5 +51,3 @@ function info(str) {
 
   return stack[0].value
 }
-
-module.exports = { info }

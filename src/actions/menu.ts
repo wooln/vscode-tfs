@@ -1,4 +1,4 @@
-const vscode = require("vscode")
+import * as vscode from "vscode"
 
 const items = {
   add: {
@@ -28,7 +28,7 @@ const items = {
   },
 }
 
-module.exports = async function menu({ uri }) {
+export async function menu(uri: vscode.Uri): Promise<void> {
   const selectedItem = await vscode.window.showQuickPick(Object.values(items))
   if (selectedItem) {
     return vscode.commands.executeCommand(selectedItem.command, uri)

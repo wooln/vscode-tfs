@@ -1,22 +1,22 @@
-const vscode = require("vscode")
-const tf = require("../tfs/tfExe").tf
-const parse = require("../tfs/output/parse")
-const { buildVersionControlUrl } = require("../tfs/web")
-const ui = require("../ui")
+import * as vscode from "vscode"
+import * as ui from "../ui"
+import { tf } from "../tfs/tfExe"
+import { parse } from "../tfs/output/parse"
+import { buildVersionControlUrl } from "../tfs/web"
 
-const tfWorkfold = (fsPath) => tf(["workfold", fsPath]).then((res) => parse.info(res.stdout))
-const tfInfo = (fsPath) => tf(["info", fsPath]).then((res) => parse.info(res.stdout))
+const tfWorkfold = (fsPath: string) => tf(["workfold", fsPath]).then((res) => parse(res.stdout))
+const tfInfo = (fsPath: string) => tf(["info", fsPath]).then((res) => parse(res.stdout))
 
 // FIXME: workaround for https://github.com/microsoft/vscode/issues/25852
 const hasIssue = !String(vscode.Uri.parse("http://host/#test=value")).includes("test=value")
-function applyWorkaround(uri, expectedUri) {
+function applyWorkaround(uri: vscode.Uri, expectedUri: string) {
   if (hasIssue) {
-    uri._formatted = expectedUri
+    ;(uri as any)._formatted = expectedUri
   }
 }
 
-module.exports = async function openInBrowser({ uri }) {
-  const [workfold, info] = await ui.showStatus(
+export async function openInBrowser(uri: vscode.Uri): Promise<void> {
+  const [workfold, info]: [any, any] = await ui.showStatus(
     "TFS: Retrieving file info...",
     Promise.all([tfWorkfold(uri.fsPath), tfInfo(uri.fsPath)])
   )
