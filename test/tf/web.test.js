@@ -1,8 +1,8 @@
 const assert = require("assert")
 const { buildVersionControlUrl } = require("../../lib/tf/web")
 
-describe("tf.web.buildVersionControlUrl", function() {
-  it("should build url", function() {
+describe("tf.web.buildVersionControlUrl", function () {
+  it("should build url", function () {
     const collection = "http://server/tfs"
     const serverPath = "$/path/to/main.js"
 

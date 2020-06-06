@@ -5,12 +5,12 @@ const parse = require("../../lib/tf/parse")
 
 const read = (...args) => fs.readFileSync(path.join(__dirname, ...args))
 
-describe("parse.info", function() {
-  it("should parse empty string", function() {
+describe("parse.info", function () {
+  it("should parse empty string", function () {
     assert.deepEqual(null, parse.info(""))
   })
 
-  it("should parse string", function() {
+  it("should parse string", function () {
     const infoEditStdout = read("./fixtures/info-edit.txt")
 
     assert.deepEqual(
@@ -20,7 +20,7 @@ describe("parse.info", function() {
           changeset: "950",
           localPath: "D:\\data\\prj\\server\\index.js",
           serverPath: "$/prj/server/index.js",
-          type: "file"
+          type: "file",
         },
         serverInformation: {
           changeset: "950",
@@ -31,27 +31,27 @@ describe("parse.info", function() {
           lockOwner: "",
           serverPath: "$/prj/server/index.js",
           size: "2702",
-          type: "file"
-        }
+          type: "file",
+        },
       },
       parse.info(infoEditStdout)
     )
   })
 
-  it("should parse when item does not match", function() {
+  it("should parse when item does not match", function () {
     const infoDoesNotExistStdout = read("./fixtures/info-does-not-exist.txt")
 
     assert.deepEqual(
       {
         localInformation: {
-          localPath: "D:\\data\\prj\\main.css.map"
-        }
+          localPath: "D:\\data\\prj\\main.css.map",
+        },
       },
       parse.info(infoDoesNotExistStdout)
     )
   })
 
-  it("should ignore === lines", function() {
+  it("should ignore === lines", function () {
     const workfoldStdout = read("./fixtures/workfold.txt")
 
     assert.deepEqual(
@@ -59,8 +59,8 @@ describe("parse.info", function() {
         workspace: "WORKSPACE_1 (Generalov, Evgeniy)",
         collection: "http://tfs.server:8080/tfs/prj_collection",
         collectionItems: {
-          "$/prj/server/index.js": "D:\\data\\server\\index.js"
-        }
+          "$/prj/server/index.js": "D:\\data\\server\\index.js",
+        },
       },
       parse.info(workfoldStdout)
     )
