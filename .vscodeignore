@@ -1,8 +1,10 @@
 .vscode/**
 .vscode-test/**
 typings/**
-test/**
+fixtures/**
 .gitignore
 .eslintrc
 .prettierrc
+*.log
+*.test.*
 jsconfig.json
