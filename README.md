@@ -16,12 +16,10 @@
 
 ## Installation
 
-1. Open up VS Code
-2. Type **`F1`**
-3. Type `ext` in command palette.
-4. Select `Extensions: Install Extension` and hit **`ENTER`**
-5. Type `tfs`
-6. Select **`TFS`** extension and hit **`ENTER`**
+Launch VS Code Quick Open (Ctrl+P), paste the following command, and press enter.
+```
+ext install generalov.vscode-tfs
+```
 
 ## Configuration
 
@@ -57,8 +55,8 @@ To be able to contribute to TFS development, you need to be at ease with **NodeJ
 ```sh
 git clone https://github.com/generalov/vscode-tfs.git
 cd vscode-tfs
-npm install
-npm test
+yarn install
+yarn test
 ```
 
 ## About the fork
