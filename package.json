@@ -49,31 +49,37 @@
             {
                 "command": "vscode-tfs.add",
                 "title": "Add",
+                "detail": "Adds files and folders to version control.",
                 "category": "TFS"
             },
             {
                 "command": "vscode-tfs.checkin",
+                "detail": "Checks in pending changes to TFS.",
                 "title": "Check In",
                 "category": "TFS"
             },
             {
                 "command": "vscode-tfs.checkout",
                 "title": "Check Out for Edit",
+                "detail": "Checks out a file and changes its pending change status to Edit.",
                 "category": "TFS"
             },
             {
                 "command": "vscode-tfs.delete",
                 "title": "Delete",
+                "detail": "Removes files and folders from the TFS and deletes them from the disk.",
                 "category": "TFS"
             },
             {
                 "command": "vscode-tfs.undo",
                 "title": "Undo Pending Changes",
+                "detail": "Discards one or more pending changes to files or folders.",
                 "category": "TFS"
             },
             {
                 "command": "vscode-tfs.openInBrowser",
                 "title": "Open in Browser",
+                "detail": "Opens files and folders in browser.",
                 "category": "TFS"
             },
             {

@@ -6,7 +6,8 @@ export async function checkin(uri: vscode.Uri): Promise<void> {
 
   vscode.window.setStatusBarMessage("TFS: Checking In...", task)
   const { stdout } = await task
+
   const messageTask = vscode.window.showInformationMessage(stdout)
-  await vscode.window.setStatusBarMessage(`TFS: ${uri.fsPath} successfully checked in.`, messageTask)
+  vscode.window.setStatusBarMessage(`TFS: ${uri.fsPath} successfully checked in.`, messageTask)
   await messageTask
 }
