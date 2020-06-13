@@ -1,18 +1,29 @@
 import * as vscode from "vscode"
-import * as commands from "./commands"
+import { add } from "./commands/add"
+import { checkin } from "./commands/checkin"
+import { checkout } from "./commands/checkout"
+import { del } from "./commands/delete"
+import { get } from "./commands/get"
+import { list } from "./commands/list"
+import { openInBrowser } from "./commands/openInBrowser"
+import { undo } from "./commands/undo"
 import { handle } from "./executor"
 
+export const commands = [
+  { command: "vscode-tfs.add", handler: handle(add) },
+  { command: "vscode-tfs.checkin", handler: handle(checkin) },
+  { command: "vscode-tfs.checkout", handler: handle(checkout) },
+  { command: "vscode-tfs.delete", handler: handle(del) },
+  { command: "vscode-tfs.get", handler: handle(get) },
+  { command: "vscode-tfs.list", handler: handle(list) },
+  { command: "vscode-tfs.openInBrowser", handler: handle(openInBrowser) },
+  { command: "vscode-tfs.undo", handler: handle(undo) },
+]
+
 export function activate(context: vscode.ExtensionContext): void {
-  context.subscriptions.push(vscode.commands.registerCommand("vscode-tfs.add", handle(commands.add)))
-  context.subscriptions.push(vscode.commands.registerCommand("vscode-tfs.checkin", handle(commands.checkin)))
-  context.subscriptions.push(vscode.commands.registerCommand("vscode-tfs.checkout", handle(commands.checkout)))
-  context.subscriptions.push(vscode.commands.registerCommand("vscode-tfs.delete", handle(commands.del)))
-  context.subscriptions.push(vscode.commands.registerCommand("vscode-tfs.get", handle(commands.get)))
-  context.subscriptions.push(vscode.commands.registerCommand("vscode-tfs.list", handle(commands.list)))
-  context.subscriptions.push(
-    vscode.commands.registerCommand("vscode-tfs.openInBrowser", handle(commands.openInBrowser))
-  )
-  context.subscriptions.push(vscode.commands.registerCommand("vscode-tfs.undo", handle(commands.undo)))
+  for (const desc of commands) {
+    context.subscriptions.push(vscode.commands.registerCommand(desc.command, desc.handler))
+  }
 }
 
 // eslint-disable-next-line @typescript-eslint/no-empty-function
