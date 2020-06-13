@@ -1,6 +1,6 @@
 {
     "name": "vscode-tfs",
-    "version": "2.0.0",
+    "version": "2.1.0-alpha1",
     "description": "TFS Visual Studio Code integration.",
     "license": "SEE LICENSE IN LICENSE",
     "main": "./out/extension",
@@ -37,6 +37,7 @@
     },
     "activationEvents": [
         "onCommand:vscode-tfs.add",
+        "onCommand:vscode-tfs.checkin",
         "onCommand:vscode-tfs.checkout",
         "onCommand:vscode-tfs.delete",
         "onCommand:vscode-tfs.undo",
@@ -48,6 +49,11 @@
             {
                 "command": "vscode-tfs.add",
                 "title": "Add",
+                "category": "TFS"
+            },
+            {
+                "command": "vscode-tfs.checkin",
+                "title": "Check In",
                 "category": "TFS"
             },
             {

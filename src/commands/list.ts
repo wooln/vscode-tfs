@@ -11,6 +11,11 @@ const items = {
     detail: "Checks out a file and changes its pending change status to Edit.",
     command: "vscode-tfs.checkout",
   },
+  checkin: {
+    label: "Check In",
+    detail: "Checks in pending changes to TFS.",
+    command: "vscode-tfs.checkin",
+  },
   del: {
     label: "Delete",
     detail: "Removes files and folders from the TFS and deletes them from the disk.",

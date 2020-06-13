@@ -1,4 +1,5 @@
 export * from "./commands/add"
+export * from "./commands/checkin"
 export * from "./commands/checkout"
 export * from "./commands/delete"
 export * from "./commands/list"
