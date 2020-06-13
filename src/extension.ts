@@ -7,6 +7,7 @@ export function activate(context: vscode.ExtensionContext): void {
   context.subscriptions.push(vscode.commands.registerCommand("vscode-tfs.checkin", handle(commands.checkin)))
   context.subscriptions.push(vscode.commands.registerCommand("vscode-tfs.checkout", handle(commands.checkout)))
   context.subscriptions.push(vscode.commands.registerCommand("vscode-tfs.delete", handle(commands.del)))
+  context.subscriptions.push(vscode.commands.registerCommand("vscode-tfs.get", handle(commands.get)))
   context.subscriptions.push(vscode.commands.registerCommand("vscode-tfs.list", handle(commands.list)))
   context.subscriptions.push(
     vscode.commands.registerCommand("vscode-tfs.openInBrowser", handle(commands.openInBrowser))

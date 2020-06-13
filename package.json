@@ -47,6 +47,12 @@
     "contributes": {
         "commands": [
             {
+                "command": "vscode-tfs.get",
+                "title": "Get",
+                "detail": "Get the latest version of files.",
+                "category": "TFS"
+            },
+            {
                 "command": "vscode-tfs.add",
                 "title": "Add",
                 "detail": "Adds files and folders to version control.",
