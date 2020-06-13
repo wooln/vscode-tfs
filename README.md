@@ -38,8 +38,10 @@ Hit **`Alt + T`** to list available commands for the current edited file.
 
 ## List of available commands
 
-- **Add** `vscode-tfs.add`
+- **Get** `vscode-tfs.get`
 - **Check Out for Edit** `vscode-tfs.checkout`
+- **Check In** `vscode-tfs.checkin`
+- **Add** `vscode-tfs.add`
 - **Delete** `vscode-tfs.delete`
 - **Undo Pending Changes** `vscode-tfs.undo`
 - **Open in Browser** `vscode-tfs.openInBrowser`

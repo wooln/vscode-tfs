@@ -36,9 +36,10 @@
         "vscode": "^1.45.1"
     },
     "activationEvents": [
-        "onCommand:vscode-tfs.add",
-        "onCommand:vscode-tfs.checkin",
+        "onCommand:vscode-tfs.get",
         "onCommand:vscode-tfs.checkout",
+        "onCommand:vscode-tfs.checkin",
+        "onCommand:vscode-tfs.add",
         "onCommand:vscode-tfs.delete",
         "onCommand:vscode-tfs.undo",
         "onCommand:vscode-tfs.openInBrowser",
@@ -53,9 +54,9 @@
                 "category": "TFS"
             },
             {
-                "command": "vscode-tfs.add",
-                "title": "Add",
-                "detail": "Adds files and folders to version control.",
+                "command": "vscode-tfs.checkout",
+                "title": "Check Out for Edit",
+                "detail": "Checks out a file and changes its pending change status to Edit.",
                 "category": "TFS"
             },
             {
@@ -65,9 +66,9 @@
                 "category": "TFS"
             },
             {
-                "command": "vscode-tfs.checkout",
-                "title": "Check Out for Edit",
-                "detail": "Checks out a file and changes its pending change status to Edit.",
+                "command": "vscode-tfs.add",
+                "title": "Add",
+                "detail": "Adds files and folders to version control.",
                 "category": "TFS"
             },
             {
